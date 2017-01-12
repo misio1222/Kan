@@ -186,7 +186,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="images\slider_ocac.jpg" />
+    <Content Include="images\dar.png" />
+    <Content Include="images\mainPhoto.png" />
+    <Content Include="images\mainPhotoNew.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />

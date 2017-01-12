@@ -4928,13 +4928,19 @@ a.list-group-item.active > .badge,
 }
 
 .jumbotron {
-  padding: 30px;
-  margin-bottom: 30px;
+  padding: 15px;
+  margin-bottom: 10px;
   font-size: 21px;
   font-weight: 200;
   line-height: 2.1428571435;
+  height:auto;
   color: inherit;
-  background-color: #eeeeee;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#919191+0,d8d8d8+76,d8d8d8+100&1+0,0.67+100 */
+background: -moz-linear-gradient(-45deg,  rgba(145,145,145,1) 0%, rgba(216,216,216,0.75) 76%, rgba(216,216,216,0.67) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  rgba(145,145,145,1) 0%,rgba(216,216,216,0.75) 76%,rgba(216,216,216,0.67) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  rgba(145,145,145,1) 0%,rgba(216,216,216,0.75) 76%,rgba(216,216,216,0.67) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#919191', endColorstr='#abd8d8d8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
 
 .jumbotron h1 {
