@@ -25,7 +25,13 @@ textarea {
     max-width: 280px;
 }
 
-.formBackground{
-    background-color: #eaeaea;
-    border-radius: 3px;
+.cont1{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ededed+0,f3f3f3+50,ededed+53,efefef+100 */
+background: #ededed; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #ededed 0%, #f3f3f3 50%, #ededed 53%, #efefef 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #ededed 0%,#f3f3f3 50%,#ededed 53%,#efefef 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #ededed 0%,#f3f3f3 50%,#ededed 53%,#efefef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#efefef',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+padding-left: 20px;
+padding-right: 20px;
 }

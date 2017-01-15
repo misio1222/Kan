@@ -4958,7 +4958,7 @@ a.badge:focus {
 .jumbotron {
   padding-top: 30px;
   padding-bottom: 30px;
-  margin-bottom: 30px;
+
   color: inherit;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b70306+0,630000+43,630000+74,630000+74,630000+100 */
 background: rgb(183,3,6); /* Old browsers */
@@ -4984,7 +4984,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b70306', end
 .container-fluid .jumbotron {
   padding-right: 15px;
   padding-left: 15px;
-  border-radius: 6px;
+
 }
 .jumbotron .container {
   max-width: 100%;
