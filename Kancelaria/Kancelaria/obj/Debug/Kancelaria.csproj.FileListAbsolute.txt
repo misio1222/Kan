@@ -204,3 +204,4 @@ C:\Users\marci\OneDrive\Dokumenty\GitHub\Kan\Kancelaria\Kancelaria\bin\Microsoft
 C:\Users\marci\OneDrive\Dokumenty\GitHub\Kan\Kancelaria\Kancelaria\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\marci\OneDrive\Dokumenty\GitHub\Kan\Kancelaria\Kancelaria\obj\Debug\Kancelaria.dll
 C:\Users\marci\OneDrive\Dokumenty\GitHub\Kan\Kancelaria\Kancelaria\obj\Debug\Kancelaria.pdb
+C:\Users\marci\OneDrive\Dokumenty\GitHub\Kan\Kancelaria\Kancelaria\obj\Debug\Kancelaria.csprojResolveAssemblyReference.cache
