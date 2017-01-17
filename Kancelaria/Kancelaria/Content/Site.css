@@ -35,3 +35,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', end
 padding-left: 20px;
 padding-right: 20px;
 }
+
+@font-face {
+	font-family: 'Allura-Regular';
+	src: url('/fonts/Allura-Regular.otf') format('opentype'); /* Make sure your file location is right */
+}
+
+@font-face {
+	font-family: 'Italianno-Regular-OTF';
+	src: url('/fonts/Italianno-Regular-OTF.otf') format('opentype'); /* Make sure your file location is right */
+}

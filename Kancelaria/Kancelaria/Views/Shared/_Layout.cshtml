@@ -3,10 +3,17 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>@ViewBag.Title - ODSZKODOWANIA</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/ico" href="~/images/favicon.ico">
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <meta name="description" content="Mielec odszkodowania - profesjonalnie bez opłat wstępnych.">
+    <meta name="keywords" content="odskodowania , odskodowania , mielec , mielec-odskodowania , mielec-odszkodowania , odszkodowania-mielec , odszkodowanie , odszkodowaniach , najlepsze odszkodowania, dariusz , dziekan, marcin , kancelaria , kancelaria-mielec , mielec-kancelaria , mielecka-kancelaria , kancelarii, mieleckich kancelarii, adwokat-mielec, prawnik-mielec, mielec-adwokat, prawnik-mielec, pomoc prawna, prawo, sąd mielec, sąd tarnobrzeg, sad tarnobrzeg ">
+    <meta name="robots" content="index, follow">
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -25,12 +32,14 @@
                     <li>@Html.ActionLink("O firmie", "About", "Home")</li>
                     <li>@Html.ActionLink("Kontakt", "Contact", "Home")</li>
                 </ul>
-                @Html.Partial("_LoginPartial")
+                @*@Html.Partial("_LoginPartial")*@
             </div>
         </div>
     </div>
     <div class="container body-content">
         @RenderBody()
+        <h1 style="color:#fff; font-size:2px;">odskodowania , odskodowania , mielec , mielec-odskodowania , mielec-odszkodowania , odszkodowania-mielec , odszkodowanie , odszkodowaniach , najlepsze odszkodowania, dariusz , dziekan, marcin , kancelaria , kancelaria-mielec , mielec-kancelaria , mielecka-kancelaria , kancelarii, mieleckich kancelarii, adwokat-mielec, prawnik-mielec, mielec-adwokat, prawnik-mielec, pomoc prawna, prawo, sąd mielec, sąd tarnobrzeg, sad tarnobrzeg </h1>
+
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - Odszkodowania </p>
