@@ -5,112 +5,113 @@
 @{
     ViewBag.Title = "Strona Główna";
 }
-
-<div class="jumbotron">
-    <img style="width:100%; height: auto;" src="~/images/mainModern.png" />
-</div>
-
-<div class="cont1">
-    <div class="row">
-        <div class="col-md-3">
-            <h2>Błędy medyczne</h2>
-            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-        </div>
-
-
-        <div class="col-md-3">
-            <h2>Wypadki w pracy</h2>
-            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-        </div>
-
-
-        <div class="col-md-3">
-            <h2>Błędy medyczne</h2>
-            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-        </div>
-
-        <div class="col-md-3">
-            <h2>Błędy medyczne 1</h2>
-            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-        </div>
+<div class="row">
+    <div class="jumbotron">
+        <img style="width:100%; height: auto;" src="~/images/mainModern.png" />
     </div>
-    <div class="row">
-        <div class="col-md-7">
-            <h2>Błędy medyczne 2</h2>
-            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+</div>
+<div class="row">
+    <div class="cont1">
+        <div class="row">
+            <div class="col-md-3">
+                <h2>Błędy medyczne</h2>
+                <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+                <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+            </div>
+
+
+            <div class="col-md-3">
+                <h2>Wypadki w pracy</h2>
+                <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+                <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+            </div>
+
+
+            <div class="col-md-3">
+                <h2>Błędy medyczne</h2>
+                <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+                <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+            </div>
+
+            <div class="col-md-3">
+                <h2>Błędy medyczne 1</h2>
+                <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+                <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+            </div>
         </div>
-        <div class="col-md-5 formBackground" style="padding-left:20px; padding-right:20px;">
-            <h2>Formularz kontaktowy</h2>
-            @using (Html.BeginForm())
+        <div class="row">
+            <div class="col-md-7">
+                <h2>Błędy medyczne 2</h2>
+                <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+                <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+            </div>
+            <div class="col-md-5 formBackground" style="padding-left:20px; padding-right:20px;">
+                <h2>Formularz kontaktowy</h2>
+                @using (Html.BeginForm())
             {
-                @Html.AntiForgeryToken()
+                    @Html.AntiForgeryToken()
 
-                <div class="form-horizontal col-md-12">
-                    <hr />
-                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-                    <div class="form-group">
-                        @Html.Label("Imię", htmlAttributes: new { @class = "control-label col-md-2" })
-                        <div class="col-md-10">
-                            @Html.EditorFor(model => model.imie, new { htmlAttributes = new { @class = "form-control" } })
-                            @Html.ValidationMessageFor(model => model.imie, "", new { @class = "text-danger" })
+                    <div class="form-horizontal col-md-12">
+                        <hr />
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        <div class="form-group">
+                            @Html.Label("Imię", htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.imie, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.imie, "", new { @class = "text-danger" })
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="form-group">
-                        @Html.Label("Nazwisko", htmlAttributes: new { @class = "control-label col-md-2" })
-                        <div class="col-md-10">
-                            @Html.EditorFor(model => model.nazwisko, new { htmlAttributes = new { @class = "form-control" } })
-                            @Html.ValidationMessageFor(model => model.nazwisko, "", new { @class = "text-danger" })
+                        <div class="form-group">
+                            @Html.Label("Nazwisko", htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.nazwisko, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.nazwisko, "", new { @class = "text-danger" })
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="form-group">
-                        @Html.Label("Adres email", htmlAttributes: new { @class = "control-label col-md-2" })
-                        <div class="col-md-10">
-                            @Html.EditorFor(model => model.emailAddress, new { htmlAttributes = new { @class = "form-control" } })
-                            @Html.ValidationMessageFor(model => model.emailAddress, "", new { @class = "text-danger" })
+                        <div class="form-group">
+                            @Html.Label("Adres email", htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.emailAddress, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.emailAddress, "", new { @class = "text-danger" })
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="form-group">
-                        @Html.Label("Telefon", htmlAttributes: new { @class = "control-label col-md-2" })
-                        <div class="col-md-10">
-                            @Html.EditorFor(model => model.tel, new { htmlAttributes = new { @class = "form-control", @maxlength = "9" } })
-                            @Html.ValidationMessageFor(model => model.tel, "", new { @class = "text-danger" })
+                        <div class="form-group">
+                            @Html.Label("Telefon", htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.tel, new { htmlAttributes = new { @class = "form-control", @maxlength = "9" } })
+                                @Html.ValidationMessageFor(model => model.tel, "", new { @class = "text-danger" })
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="form-group">
-                        @Html.Label("Opis zdarzenia", htmlAttributes: new { @class = "control-label col-md-2" })
-                        <div class="col-md-10">
-                            @Html.TextAreaFor(model => model.question, new { @class = "form-control", rows = "10", @style = "height: 100px;", @placeholder = "Przybliżony opis całego zdarzenia wraz z uzyskaną kwotą odszkodowania bądź też jej brakiem." })
-                            @Html.ValidationMessageFor(model => model.question, "", new { @class = "text-danger" })
+                        <div class="form-group">
+                            @Html.Label("Opis zdarzenia", htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.TextAreaFor(model => model.question, new { @class = "form-control", rows = "10", @style = "height: 100px;", @placeholder = "Przybliżony opis całego zdarzenia wraz z uzyskaną kwotą odszkodowania bądź też jej brakiem." })
+                                @Html.ValidationMessageFor(model => model.question, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            @Html.Label("Załącznik", htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.TextBoxFor(model => model.file, new { type = "file", @class = "form-control " })
+                                @Html.ValidationMessageFor(model => model.file, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <input type="submit" value="WYŚLIJ" class="btn btn-primary form-control" />
+                            </div>
                         </div>
                     </div>
-                    <div class="form-group">
-                        @Html.Label("Załącznik", htmlAttributes: new { @class = "control-label col-md-2" })
-                        <div class="col-md-10">
-                            @Html.TextBoxFor(model => model.file, new { type = "file", @class = "form-control " })
-                            @Html.ValidationMessageFor(model => model.file, "", new { @class = "text-danger" })
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-md-offset-2 col-md-10">
-                            <input type="submit" value="WYŚLIJ" class="btn btn-primary form-control" />
-                        </div>
-                    </div>
-                </div>
-            }
+                }
 
+            </div>
         </div>
     </div>
 </div>
-
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
 }
